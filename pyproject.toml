@@ -1,0 +1,21 @@
+[project]
+name = "nba-data-science"
+version = "0.1.0"
+description = "Projeto desenvolvido para predição de Fantasy Points de jogadores da NBA."
+readme = "README.md"
+authors = [
+    { name = "lgaquini", email = "lgaquini@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "pandas>=3.1.1",
+    "scikit-learn>=1.9.1",
+]
+
+[project.scripts]
+nba-data-science = "nba_data_science:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
